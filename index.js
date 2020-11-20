@@ -38,7 +38,12 @@ function moveToNextSlide() {
 
 function moveToPrevSlide() {
     // console.log('Move to Prev slide')
+    hideAllSlides();
+    if (slidePosition === 0 ) {
+        slidePosition = totalSlides -1;
+    } else {
+        slidePosition--;
+    }
+    slides[slidePosition].classList.add('carousel-item-visible');
     
 }
-
-console.log(totalSlides)
