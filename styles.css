@@ -30,6 +30,7 @@
 
 .carousel .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.5git s;
 }
 
 .carousel .carousel-item img {
@@ -61,5 +62,14 @@
 
 .carousel-actions button:hover {
     transform: scale(1.1);
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
