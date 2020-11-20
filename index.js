@@ -9,18 +9,25 @@
     6) Use console.log to validate that you have 3 'carousel-item' in your 'slides' const
 */
 
-const slides = document.getElementById("carousel-item");
+const slides = document.getElementsByClassName('carousel-item');
 let slidePosition = 0;
 const totalSlides = slides.length;
 
-document.getElementById("carousel-button-next").addEventListener("click", moveToNextSlide);
-document.getElementById("carousel-button-prev").addEventListener("click", moveToPrevSlide);
+const slideNext = document.getElementById('carousel-button-next');
+slideNext.addEventListener('click', moveToNextSlide);
+
+const slidePrev = document.getElementById('carousel-button-prev');
+slidePrev.addEventListener('click', moveToPrevSlide);
+
 
 function moveToNextSlide() {
-    console.log('Moving to the next slide');
+    console.log('moving to the next slide!');
 }
 
 function moveToPrevSlide() {
-    console.log('Moving to the prev slide');
+    console.log('moving to the prev slide!');    
 }
+
+// console.log(totalSlides)
+
 
