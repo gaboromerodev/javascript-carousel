@@ -8,26 +8,21 @@
     5) Create two functions: moveToNextSlide and moveToPrevSlide - use both of these in action 4 as the second argument on your 'addEventListener' - don't worry about these functions being empty, we will add to them in the upcoming screencasts
     6) Use console.log to validate that you have 3 'carousel-item' in your 'slides' const
 */
+console.log('Hello world!')
 
 const slides = document.getElementsByClassName('carousel-item');
 let slidePosition = 0;
 const totalSlides = slides.length;
 
-const slideNext = document.getElementById('carousel-button-next');
-slideNext.addEventListener('click', moveToNextSlide);
-
-const slidePrev = document.getElementById('carousel-button-prev');
-slidePrev.addEventListener('click', moveToPrevSlide);
-
+document.getElementById('carousel-button-next').addEventListener('click', moveToNextSlide);
+document.getElementById('carousel-button-prev').addEventListener('click', moveToPrevSlide);
 
 function moveToNextSlide() {
-    console.log('moving to the next slide!');
+    console.log("Move to Next Slide")
 }
 
 function moveToPrevSlide() {
-    console.log('moving to the prev slide!');    
+    console.log('Move to Prev slide')
 }
 
-// console.log(totalSlides)
-
-
+console.log(totalSlides)

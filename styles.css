@@ -37,7 +37,7 @@
     height: auto;
 }
 
-.carousel .carousel-action {
+.carousel .carousel-actions {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -46,7 +46,7 @@
     transform: translateY(-50%);
 }
 
-.carousel-action button {
+.carousel-actions button {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -58,7 +58,7 @@
     background-color: antiquewhite;
 }
 
-.carousel-action button:hover {
+.carousel-actions button:hover {
     transform: scale(1.1);
 }
 
