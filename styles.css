@@ -23,7 +23,8 @@
     margin: 0 auto;
 }
 
-.carousel .carousel-item {
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
     display: none;
 }
 
