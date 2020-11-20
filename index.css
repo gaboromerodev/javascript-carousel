@@ -42,7 +42,8 @@
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    top: 45%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .carousel-action button {
@@ -50,8 +51,11 @@
     height: 40px;
     border-radius: 50px;
     margin: 0 5px;
-    font-weight: 700;
+    font-weight: bolder;
+    font-size: 16px;
     border: none;
+    cursor: pointer;
+    background-color: antiquewhite;
 }
 
 .carousel-action button:hover {
